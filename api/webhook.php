@@ -116,7 +116,7 @@ $input = file_get_contents('php://input');
 $data = json_decode($input, true);
 
 if (!$data || !isset($data['type'])) {
-    echo json_encode(['status' => 'error', 'message' => 'No data received']);
+    echo json_encode(['status' => 'error']);
     exit;
 }
 
